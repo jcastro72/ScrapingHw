@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname + '/public')));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/mongoscraper"), { useNewUrlParser: true };
+mongoose.connect("mongodb://heroku_q49j4mx4:t2b5g52ip2ubma00i9p8is7488@ds111063.mlab.com:11063/heroku_q49j4mx4"), { useNewUrlParser: true };
 var db = mongoose.connection;
 // Show any mongoose errors
 db.on("error", function(error) {
