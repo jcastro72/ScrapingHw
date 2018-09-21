@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mongo Scarper</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="/javascript/home.js"></script>
+    <script type="text/javascript" src="/javascript/saved.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo center">Mongo Scraper</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#" onclick="displaySaved()">SAVED ARTICLES</a></li>
+                    <button data-target="scrape-article" class="btn waves-effect waves-light black modal-trigger" onclick="displayScrape()">SCRAPE ARTICLES</button>
+
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#" onclick="displaySAved()">SAVED ARTICLES</a></li>
+                    <button data-target="scrape-article" class="btn waves-effect waves-light modal-trigger" onclick="displayScrape()">SCRAPE ARTICLES</button>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="https://www.nytco.com/wp-content/themes/nytco/images/nytco/NYT-wordmark.png">
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>MONGO SCRAPER</h3>
+                        <h5 class="light grey-text text-lighten-3">NEW YORK TIMES</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="/images/newspaper.jpg">
+                    <!-- random image -->
+                    <div class="caption left-align">
+                        <h3 class="white-text">NEW YORK TIMES</h3>
+                        <h5 class="light white-text">VIEW YOUR FAVOURITE ARTICLES......</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="/images/newspaper2.jpg">
+                    <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>NEW YORK TIMES</h3>
+                        <h5 class="light grey-text text-lighten-3">SAVE YOUR FAVOURITE ARTICLES!!!!!</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="/images/newspaper3.jpg">
+                    <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>NEW YORK TIMES</h3>
+                        <h5 class="light grey-text text-lighten-3">ONE CLICK TO SCRAPE YOUR FAVOURTIE ARTICLE.......</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col s12 m4 l4" id="nyt-0">
+            </div>
+            <div class="col s12 m4 l4" id="nyt-1">
+            </div>
+            <div class="col s12 m4 l4" id="nyt-2">
+            </div>
+        </div>
+        <!-- Modal Structure  for scraping article information-->
+        <div id="scrape-article" class="modal">
+            <div class="modal-content">
+                <h4>Number of Articles Scrapped</h4>
+                <h4 id="total-number"></h4>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-action modal-close waves-effect waves-green btn">Close</a>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Structure for creating a note -->
+    <div id="notes" class="modal">
+        <div class="modal-content">
+            <form>
+                <h4 id="display-title"></h4>
+                <div id="display-note"></div>
+                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                <label for="textarea1">Enter Notes Here</label>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn" id="savenote">Save Note</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
