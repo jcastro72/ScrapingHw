@@ -1,30 +1,34 @@
 {
-  "name": "mongo-scraper",
+  "name": "scrapinghw",
   "version": "1.0.0",
-  "description": "A newspaper scraper app",
-  "main": "server.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sahanabalram/Mongo-Scraper.git"
+    "url": "git+https://github.com/jcastro72/ScrapingHw.git"
   },
-  "author": "Sahana Balram",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sahanabalram/Mongo-Scraper/issues"
+    "url": "https://github.com/jcastro72/ScrapingHw/issues"
   },
-  "homepage": "https://github.com/sahanabalram/Mongo-Scraper#readme",
+  "homepage": "https://github.com/jcastro72/ScrapingHw#readme",
   "dependencies": {
-    "body-parser": "^1.18.2",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
-    "express": "^4.16.1",
+    "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
-    "mongojs": "^2.4.1",
-    "mongoose": "^4.12.0",
-    "morgan": "^1.9.0",
+    "mongoose": "^5.2.15",
+    "morgan": "^1.9.1",
     "path": "^0.12.7",
-    "request": "^2.83.0"
-  }
+    "request": "^2.88.0",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {}
 }
+
